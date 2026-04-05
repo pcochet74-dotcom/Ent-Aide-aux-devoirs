@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aide aux Devoirs - Espace Élève</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff8500;
+            --secondary: #2c3e50;
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--secondary);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin: 0; font-size: 1.8rem; }
+        .subtitle { opacity: 0.8; font-size: 0.9rem; margin-top: 10px; }
+
+        .homework-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid var(--primary);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .tag {
+            background: #ffe8d1;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .content {
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .resources {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .btn-action {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .btn-action:hover {
+            transform: translateY(-2px);
+            background: #e67700;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mon Espace Aide aux Devoirs</h1>
+            <div class="subtitle">Accompagnement personnalisé & Ressources</div>
+        </header>
+
+        <div class="homework-card">
+            <span class="tag">Mathématiques</span>
+            <div class="content">
+                <h3>Correction de l'exercice 3 (Thalès)</h3>
+                <p>Salut ! Voici la correction détaillée que nous avons vue ensemble. N'oublie pas de bien rédiger ta conclusion.</p>
+                
+                <div class="resources">
+                    <strong>Ressources :</strong><br>
+                    <a href="#" class="btn-action">Voir la vidéo explicative</a>
+                    <a href="#" class="btn-action" style="background:#2c3e50;">Ouvrir mon OneNote</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="homework-card" style="border-left-color: #3498db;">
+            <span class="tag" style="background:#d6eaf8; color:#3498db;">Français</span>
+            <div class="content">
+                <h3>Préparation de la dictée</h3>
+                <p>Pense à réviser les accords du participe passé pour demain.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Propulsé par ton extension ENT & GitHub Pages
+        </div>
+    </div>
+
+</body>
+</html>
